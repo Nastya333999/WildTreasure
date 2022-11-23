@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Wild Treasure</string>
+
+    <string name="secure_get_parametr">cTML6oNCS5</string>
+    <string name="secure_key">msUnkIFNZG</string>
+    <string name="dev_tmz_key">4FR7p93EiI</string>
+    <string name="adb_key">jbYpuMyuqB</string>
+    <string name="referrer_key">0yrmCWvXCD</string>
+    <string name="gadid_key">sML0byAywX</string>
+    <string name="deeplink_key">vfxPzS2sgr</string>
+    <string name="source_key">I8n5FQhFPF</string>
+    <string name="af_id_key">QrADJkJYfs</string>
+    <string name="adset_id_key">nNKaYAMYHi</string>
+    <string name="campaign_id_key">Dto0JukzTN</string>
+    <string name="app_campaign_key">0aB0eajBjB</string>
+    <string name="adset_key">nUHGlZ4z5y</string>
+    <string name="adgroup_key">5LDR0vkkXx</string>
+    <string name="orig_cost_key">XWccxns3v0</string>
+    <string name="af_siteid_key">tLLG5XpH7G</string>
+
+    <string name="facebook_id">504074698329591</string>
+    <string name="facebook_client_token">92763f5dd9b901ed5406b01602c337b0</string>
+</resources>
