@@ -1,10 +1,10 @@
-package com.app.wildtreasure.ui
+package com.app.wildtreasure.ui.theme
 
 import android.app.Application
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.app.wildtreasure.R
-import com.app.wildtreasure.ui.theme.BaseViewModel
+import com.app.wildtreasure.ui.data.DTItem
 
 class GViewModel(private val app: Application) : BaseViewModel(app) {
     var position = MutableLiveData<Int>(0)

@@ -1,4 +1,4 @@
-package com.app.wildtreasure.ui
+package com.app.wildtreasure.ui.pres
 
 import android.animation.Animator
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.wildtreasure.databinding.ActGBinding
+import com.app.wildtreasure.ui.theme.GViewModel
 
 class GAG : AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package com.app.wildtreasure.ui
+package com.app.wildtreasure.ui.data
 
 import androidx.annotation.DrawableRes
 

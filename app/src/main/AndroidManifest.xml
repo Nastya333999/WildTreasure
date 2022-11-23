@@ -21,20 +21,20 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:fullBackupContent"
         tools:targetApi="31"
-        android:name=".ui.AP">
+        android:name=".ui.pres.AP">
         <activity
-            android:name=".ui.WActivity"
+            android:name=".ui.pres.WActivity"
             android:exported="false"
             android:theme="@style/Theme.App.Main"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
         <activity
-            android:name=".ui.GAG"
+            android:name=".ui.pres.GAG"
             android:screenOrientation="portrait"
             android:exported="true"
             android:theme="@style/Theme.App.Main"
             android:configChanges="keyboardHidden|orientation|screenSize" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.pres.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:label="@string/app_name"
@@ -49,10 +49,10 @@
 
     <meta-data
         android:name="com.facebook.sdk.ApplicationId"
-        android:value="@string/facebook_id" />
+        android:value="@string/fi" />
     <meta-data
         android:name="com.facebook.sdk.ClientToken"
-        android:value="@string/facebook_client_token" />
+        android:value="@string/fct" />
 
     </application>
 </manifest>

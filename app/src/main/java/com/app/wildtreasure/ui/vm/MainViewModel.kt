@@ -1,14 +1,15 @@
-package com.app.wildtreasure.ui
+package com.app.wildtreasure.ui.vm
 
 import android.app.Application
 import android.provider.Settings
 import android.util.Log
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.app.mylibrary.DataUrl
 import com.app.mylibrary.UrlBuilder
-import com.app.wildtreasure.MainActivity
 import com.app.wildtreasure.R
+import com.app.wildtreasure.ui.*
+import com.app.wildtreasure.ui.pres.AP
+import com.app.wildtreasure.ui.pres.MainActivity
 import com.app.wildtreasure.ui.theme.BaseViewModel
 import com.appsflyer.AppsFlyerLib
 import com.facebook.applinks.AppLinkData
@@ -55,20 +56,20 @@ class MainViewModel(private val app: Application) : BaseViewModel(app) {
                     apps = if (deep == "null") apps else null,
                     deep = deep,
                     uid = if (deep == "null") uId else null,
-                    secure_get_parametr = R.string.secure_get_parametr,
-                    secure_key = R.string.secure_key,
-                    dev_tmz_key = R.string.dev_tmz_key,
-                    gadid_key = R.string.gadid_key,
-                    deeplink_key = R.string.deeplink_key,
-                    source_key = R.string.source_key,
-                    af_id_key = R.string.af_id_key,
-                    adset_id_key = R.string.adset_id_key,
-                    campaign_id_key = R.string.campaign_id_key,
-                    app_campaign_key = R.string.app_campaign_key,
-                    adset_key = R.string.adset_key,
-                    adgroup_key = R.string.adgroup_key,
-                    orig_cost_key = R.string.orig_cost_key,
-                    af_siteid_key = R.string.af_siteid_key
+                    secure_get_parametr = R.string.sdfghj,
+                    secure_key = R.string.cvbnk,
+                    dev_tmz_key = R.string.edfgbhnj,
+                    gadid_key = R.string.qasfghjnm,
+                    deeplink_key = R.string.zxcftgbnhgfd,
+                    source_key = R.string.plkiuygvf,
+                    af_id_key = R.string.wsdfghjkiuhb,
+                    adset_id_key = R.string.wsdfgvbhnmkl,
+                    campaign_id_key = R.string.wsdfvghbn,
+                    app_campaign_key = R.string.sdcvbhj,
+                    adset_key = R.string.poiuy,
+                    adgroup_key = R.string.mnbv,
+                    orig_cost_key = R.string.kjnb,
+                    af_siteid_key = R.string.qasdfvb
                 )
                 Log.e("MainState", "$url")
                 _d.emit(MainState.NavigateToWeb(url))

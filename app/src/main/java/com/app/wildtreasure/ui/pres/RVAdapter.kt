@@ -1,4 +1,4 @@
-package com.app.wildtreasure.ui
+package com.app.wildtreasure.ui.pres
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.app.wildtreasure.R
+import com.app.wildtreasure.ui.data.DTItem
 
 
 class RVAdapter() :

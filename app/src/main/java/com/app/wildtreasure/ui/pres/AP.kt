@@ -1,4 +1,4 @@
-package com.app.wildtreasure.ui
+package com.app.wildtreasure.ui.pres
 
 import android.app.Application
 import androidx.room.Room
