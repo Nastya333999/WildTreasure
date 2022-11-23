@@ -2,7 +2,7 @@ package com.app.wildtreasure.ui
 
 import androidx.annotation.DrawableRes
 
-data class Item(
+data class DTItem(
     @DrawableRes val resIdfirst: Int,
     @DrawableRes val resIdSecond: Int,
     @DrawableRes val resIdTherd: Int,

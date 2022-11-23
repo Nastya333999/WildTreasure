@@ -6,21 +6,21 @@ import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.app.wildtreasure.databinding.ActivityGameBinding
+import com.app.wildtreasure.databinding.ActGBinding
 
-class GameActivity : AppCompatActivity() {
+class GAG : AppCompatActivity() {
 
-    private lateinit var binding: ActivityGameBinding
-    private val viewModel: MainViewModel by viewModels()
+    private lateinit var binding: ActGBinding
+    private val viewModel: GViewModel by viewModels()
     private val adapter = RVAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityGameBinding.inflate(layoutInflater)
+        binding = ActGBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        initObservers()
-        initAdapter()
+        iO()
+        iA()
 
         binding.btnPlay.setOnClickListener {
             viewModel.addPosition()
@@ -46,7 +46,7 @@ class GameActivity : AppCompatActivity() {
 
     }
 
-    private fun initObservers() {
+    private fun iO() {
 
         viewModel.items.observe(this) {
             adapter.itemList.clear()
@@ -60,7 +60,7 @@ class GameActivity : AppCompatActivity() {
 
     }
 
-    private fun initAdapter() {
+    private fun iA() {
         val myLinearLayoutManager = object : LinearLayoutManager(this) {
             override fun canScrollVertically(): Boolean {
                 return false

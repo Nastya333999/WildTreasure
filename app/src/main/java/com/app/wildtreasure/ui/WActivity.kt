@@ -26,7 +26,7 @@ class WActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_wactivity)
+        setContentView(R.layout.act_w)
 
         window.statusBarColor = resources.getColor(R.color.black, theme)
 
@@ -70,14 +70,14 @@ class WActivity : AppCompatActivity() {
                 super.onPageFinished(view, url)
                 Log.e("onPageFinished", "url is $url")
                 CookieManager.getInstance().flush()
-                if ((PREFIX + BASE_URL) == url){
-                    val intent = Intent(this@WActivity, GameActivity::class.java)
+                if ((PR + BU) == url){
+                    val intent = Intent(this@WActivity, GAG::class.java)
                     intent.flags =
                         Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                     startActivity(intent)
                 } else {
-                    if (url.isNotEmpty() && !url.contains(BASE_URL)) {
-                        viewModel.saveUrl(url)
+                    if (url.isNotEmpty() && !url.contains(BU)) {
+                        viewModel.svUrl(url)
                         Log.e("mistake here", "$url")
                     }
                 }
@@ -91,7 +91,7 @@ class WActivity : AppCompatActivity() {
                 fileChooserParams: FileChooserParams
             ): Boolean {
                 valueCallback = filePathCallback
-                data.launch(IMAGE_MIME_TYPE)
+                data.launch(IMT)
                 return true
             }
 
@@ -115,9 +115,9 @@ class WActivity : AppCompatActivity() {
     }
 
     companion object {
-        const val PREFIX = "https://"
-        const val BASE_URL = "firstwolf.club/"
-        private const val IMAGE_MIME_TYPE = "image/*"
+        const val PR = "https://"
+        const val BU = "firstwolf.club/"
+        private const val IMT = "image/*"
         private const val USER_AGENT =
             "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
     }

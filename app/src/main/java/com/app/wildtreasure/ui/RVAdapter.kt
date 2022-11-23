@@ -10,7 +10,7 @@ import com.app.wildtreasure.R
 
 class RVAdapter() :
     RecyclerView.Adapter<RVAdapter.RVHolder>() {
-    val itemList: MutableList<Item> = mutableListOf()
+    val itemList: MutableList<DTItem> = mutableListOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RVHolder {
         val itemView =
@@ -32,7 +32,7 @@ class RVAdapter() :
         val imViewFour = item.findViewById<ImageView>(R.id.imViewFour)
 
 
-        fun bind(item: Item) {
+        fun bind(item: DTItem) {
             imViewFirst.setImageResource(item.resIdfirst)
             imViewSecond.setImageResource(item.resIdSecond)
             imViewTherd.setImageResource(item.resIdTherd)

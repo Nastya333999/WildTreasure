@@ -2,7 +2,6 @@ package com.app.wildtreasure
 
 import android.content.Intent
 import android.os.Bundle
-import android.provider.Settings
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -25,9 +24,7 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import androidx.room.Room
-import com.app.mylibrary.AppDatabase
-import com.app.wildtreasure.ui.GameActivity
+import com.app.wildtreasure.ui.GAG
 import com.app.wildtreasure.ui.MainState
 import com.app.wildtreasure.ui.MainViewModel
 import com.app.wildtreasure.ui.WActivity
@@ -43,7 +40,7 @@ class MainActivity : ComponentActivity() {
 
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.data.collectLatest { state ->
+                viewModel.d.collectLatest { state ->
                     setContent {
                         when (state) {
                             is MainState.Loading -> {
@@ -84,7 +81,7 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun navigateToGame() {
-        val intet = Intent(this, GameActivity::class.java)
+        val intet = Intent(this, GAG::class.java)
         startActivity(intet)
         finish()
     }

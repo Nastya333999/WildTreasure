@@ -4,12 +4,12 @@ import android.app.Application
 import androidx.room.Room
 import com.app.mylibrary.AppDatabase
 
-class App : Application() {
-    lateinit var dataBase : AppDatabase
+class AP : Application() {
+    lateinit var dB : AppDatabase
 
     override fun onCreate() {
         super.onCreate()
-        dataBase = Room.databaseBuilder(
+        dB = Room.databaseBuilder(
             this,
             AppDatabase::class.java, "DataUrl"
         ).build()

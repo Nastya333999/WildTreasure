@@ -3,10 +3,10 @@ package com.app.wildtreasure.ui
 import android.content.Context
 import com.onesignal.OneSignal
 
-class OneWrapper(context: Context, uid: String) {
+class WrO(context: Context, uid: String) {
     init {
         OneSignal.initWithContext(context)
-        OneSignal.setAppId(Const.ONE_SIGNAL_ID)
+        OneSignal.setAppId(CV.OSI)
         OneSignal.setExternalUserId(uid)
     }
 

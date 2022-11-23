@@ -6,8 +6,8 @@
     </style>
 
     <style name="Theme.App.Main" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="windowSplashScreenBackground">@drawable/p6</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/p6</item>
+        <item name="windowSplashScreenBackground">@drawable/img_y</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/img_y</item>
         <item name="postSplashScreenTheme">@style/Theme.AppCompat.Light.NoActionBar</item>
     </style>
 </resources>

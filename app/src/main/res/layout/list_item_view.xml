@@ -10,7 +10,7 @@
         android:id="@+id/imViewFirst"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:src="@drawable/p1"
+        android:src="@drawable/im_q"
         app:layout_constraintEnd_toStartOf="@+id/imViewSecond"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -19,7 +19,7 @@
         android:id="@+id/imViewSecond"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:src="@drawable/p2"
+        android:src="@drawable/im_w"
         app:layout_constraintEnd_toStartOf="@+id/imViewTherd"
         app:layout_constraintStart_toEndOf="@id/imViewFirst"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +28,7 @@
         android:id="@+id/imViewTherd"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:src="@drawable/p3"
+        android:src="@drawable/img_e"
         app:layout_constraintEnd_toStartOf="@+id/imViewFour"
         app:layout_constraintStart_toEndOf="@id/imViewSecond"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,7 +37,7 @@
         android:id="@+id/imViewFour"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:src="@drawable/p4"
+        android:src="@drawable/img_r"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/imViewTherd"
         app:layout_constraintTop_toTopOf="parent" />
